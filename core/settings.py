@@ -34,9 +34,19 @@ INSTALLED_APPS = [
 
     'core',
     'blog',
+    'tailwind',
+    'theme',
 ]
 
-MIDDLEWARE = [
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+NPM_BIN_PATH = r"C:\Archivos de programa\nodejs\npm.cmd"
+
+MIDDLEWARE = [   
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
