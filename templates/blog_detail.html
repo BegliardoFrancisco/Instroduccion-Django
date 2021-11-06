@@ -1,3 +1,11 @@
-{{post.title}}
-<br>
-{{post.content}}
+
+{% extends 'base.html' %}
+
+{% block content%}
+
+	<h1 class="block w-full text-grey-darkest mb-8">{{post.title}}</h1>
+	<br>
+	<h2 class="block w-full text-grey-darkest mb-8">{{post.content}}</h2>
+	
+
+{% endblock %}
